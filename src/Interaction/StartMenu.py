@@ -16,20 +16,29 @@ def changeParser():
 class StartMenu:
     button_size = (8, 2)
     window_size = (400, 230)
+    ifShowFrameSide = False
 
     def __init__(self, put=''):
         """
         :param put: 提前放置在entry的字符
         """
         self.window = tk.Tk()
+        self.frames = set()
         self.frame_poemName = tk.Frame(self.window)
         self.frame_buttons = tk.Frame(self.window)
+        self.frames.update({self.frame_buttons, self.frame_poemName})
         self.entry = tk.Entry()  # 临时控件
         self.corrector = Corrector(self, None, self.frame_poemName)
         self.initWindow()
         self.initFrames()
         self.window.update()
         self.initWidgets(put)
+
+    def showFrameSide(self):
+        self.ifShowFrameSide = not self.ifShowFrameSide
+        for f in self.frames:
+            f['bd'] = int(self.ifShowFrameSide)
+            f['relief'] = (tk.FLAT, tk.RIDGE)[self.ifShowFrameSide]
 
     def recite(self, isReciteAll: bool):
         isRight, poemM = self.corrector.checkPoem()
@@ -67,12 +76,15 @@ class StartMenu:
                   command=lambda: self.recite(False)).pack(expand=True)
         fb1.pack(side=tk.LEFT, expand=True, fill=tk.BOTH)
         fb2.pack(side=tk.LEFT, expand=True, fill=tk.BOTH)
+        self.frames.update({fpoem, fentry, fb1, fb2})
 
         # 安放设置菜单
+        menu = tk.Menu(self.window)
         # HTML解析器开关
-        parserMenu = tk.Menu(self.window)
-        parserMenu.add_command(label='HTML解析器开关', command=changeParser)
-        self.window.configure(menu=parserMenu)
+        menu.add_command(label='HTML解析器开关', command=changeParser)
+        # Frame边框展示开关
+        menu.add_command(label='Frame边框开关', command=self.showFrameSide)
+        self.window.configure(menu=menu)
 
     def initWindow(self):
         self.window.geometry('x'.join([str(i) for i in self.window_size]))
