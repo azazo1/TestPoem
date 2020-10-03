@@ -1,0 +1,467 @@
+<html>
+<div id="translate-button" style="background-color: white; display: none; top: 94px; left: 382px;"><img
+        src="data:image/png;base64,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">
+</div>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://m.baidu.com/static/index/icon/w_icon2.png" type="image/x-icon">
+    <meta name="keywords" content="百度汉语">
+    <meta name="description" content="百度汉语">
+    <title>沁园春长沙_诗词_百度汉语</title>
+    <script src="//hm.baidu.com/hm.js?010e9ef9290225e88b64ebf20166c8c4"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?010e9ef9290225e88b64ebf20166c8c4";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+
+    </script>
+
+    <link rel="stylesheet" href="/static/asset/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/asset/css/poem.css?v=201703281500">
+
+    <script data-require-id="sug_pc" src="/static/asset/asset/sug_pc.js?v=201703281500" async=""></script>
+    <script data-require-id="poem_detail_pc" src="/static/asset/asset/poem_detail_pc.js?v=201703281500"
+            async=""></script>
+    <script data-require-id="etpl/main" src="/static/asset/dep/etpl/main.js?v=201703281500" async=""></script>
+    <script data-require-id="ellipsis" src="/static/asset/asset/ellipsis.js?v=201703281500" async=""></script>
+    <script data-require-id="etpl/tpl" src="/static/asset/dep/etpl/tpl.js?v=201703281500" async=""></script>
+    <script data-require-id="user" src="/static/asset/asset/user.js?v=201703281500" async=""></script>
+    <script data-require-id="pagination" src="/static/asset/asset/pagination.js?v=201703281500" async=""></script>
+    <script data-require-id="tips" src="/static/asset/asset/tips.js?v=201703281500" async=""></script>
+</head>
+
+<body class="pc module" id="pc--body" data-name="沁园春长沙">
+    <div id="search-bar">
+        <div class="wrapper">
+            <div style="margin-right:300px;position: relative">
+                <div class="dict-logo"><a href="/" title="百度汉语"></a></div>
+                <div class="search-box module" id="search-box" style="34px;">
+                    <form name="f" id="form" action="/s" class="fm">
+            <span class="bg s_ipt_wr quickdelete-wrap">
+                <input id="kw" name="wd" class="s_ipt" placeholder="请输入要查询的词语、成语、诗词" value="沁园春长沙" maxlength="40"
+                       autocomplete="off">
+                <input name="from" value="poem" type="hidden">
+            </span>
+                        <span class="bg s_btn_wr focus">
+                <input type="submit" id="su" value="百度一下" class="bg s_btn">
+            </span>
+                    </form>
+                    <div class="suggest-div" style="display: none;">
+                        <div class="suggest-content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap-userbar module" id="wrap-userbar">
+
+                <ul class="userbar login">
+                    <li class="userbar-username userbar-item">
+                        <a href="http://www.baidu.com/p/请回复查看内容?from=hanyu" class="username-title" id="username-title"
+                           target="_blank">请回复查看内容<i class="arrow-down">&nbsp;</i></a>
+                        <ul class="userbar-username-menu" id="userbar-username-menu">
+                            <li>
+                                <a href="http://www.baidu.com/p/请回复查看内容?from=hanyu" title="我的主页"
+                                   target="_blank">我的主页</a>
+                            </li>
+                            <li>
+                                <a href="http://passport.baidu.com/" title="账号设置" target="_blank">账号设置</a>
+                            </li>
+                            <li>
+                                <a href="https://passport.baidu.com/?logout&amp;u=http://hanyu.baidu.com%2Fs%3Fwd%3D%25E6%25B2%2581%25E5%259B%25AD%25E6%2598%25A5%25E9%2595%25BF%25E6%25B2%2599%26from%3Dpoem"
+                                   title="退出">退出</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="pipe userbar-item">|</li>
+                    <li class="userbar-item"><a href="/download" id="login-bar-download" class="download-link">手机版</a>
+                    </li>
+                    <li class="pipe userbar-item">|</li>
+                    <li class="userbar-item">
+                        <a href="/zici/wordbook" title="我的词典" target="_blank" class="userbar-item-myword">我的生词本</a>
+                    </li>
+                    <script>var userInfo={"un": "请回复查看内容", "uid": "1097722032"};</script>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 外层包裹 -->
+    <div id="body-wrapper">
+        <div id="main" class="module">
+            <div class="content-panel module" id="content-panel">
+
+                <div class="poem-detail-body">
+                    <!-- 诗名作者 -->
+                    <div class="poem-detail-item" id="poem-detail-header">
+                        <h1>沁园春·长沙</h1>
+                        <div class="poem-detail-header-info">
+                            <a class="poem-detail-header-author" href="/s?wd=毛泽东">
+                                <span class="poem-info-gray">【作者】</span>毛泽东
+                            </a>
+                            <span class="poem-detail-header-author">
+                    <span class="poem-info-gray">【朝代】</span>近现代
+                </span>
+                            <div class="body-means-change">
+                                译文对照
+                            </div>
+                        </div>
+                        <div class="poem-detail-separator"></div>
+                        <div class="poem-detail-item-content">
+                            <p class="poem-detail-main-text" id="body_p">
+                                <span id="body_1_0" data="means_1_0">独立<span class="body-zhushi-span"
+                                                                             data="&quot;\u5c31\u662f\u6df1\u79cb\u3001\u665a\u79cb\u3002\u79cb\u6df1\u5df2\u6709\u5bd2\u610f\uff0c\u6240\u4ee5\u8bf4\u662f\u5bd2\u79cb\u3002&quot;">寒秋</span>，</span><span
+                                    id="body_1_1" data="means_1_1"><span class="body-zhushi-span"
+                                                                         data="&quot;\u4e00\u540d\u6e58\u6c34\uff0c\u6e56\u5357\u7701\u6700\u5927\u7684\u6cb3\u6d41\uff0c\u6e90\u51fa\u5e7f\u897f\u58ee\u65cf\u81ea\u6cbb\u533a\u9675\u5ddd\u53bf\u5357\u7684\u6d77\u6d0b\u5c71\uff0c\u957f1752\u91cc\uff0c\u5411\u4e1c\u5317\u6d41\u8d2f\u6e56\u5357\u7701\u4e1c\u90e8\uff0c\u7ecf\u8fc7\u957f\u6c99\uff0c\u5317\u5165\u6d1e\u5ead\u6e56\u3002\u3000\u6240\u4ee5\u8bf4\u662f\u6e58\u6c5f\u5317\u53bb\u3002&quot;">湘江</span>北去，</span><span
+                                    id="body_1_2" data="means_1_2"><span class="body-zhushi-span"
+                                                                         data="&quot;\u5730\u540d\uff0c\u53c8\u540d\u6c34\u9646\u6d32\uff0c\u662f\u957f\u6c99\u57ce\u897f\u6e58\u6c5f\u4e2d\u4e00\u4e2a\u72ed\u957f\u5c0f\u5c9b\uff0c\u897f\u9762\u9760\u8fd1\u5cb3\u9e93\u5c71\u3002\u5357\u5317\u957f\u7ea611\u91cc\uff0c\u4e1c\u897f\u6700\u5bbd\u5904\u7ea6\u4e00\u91cc\u3002\u6bdb\u6cfd\u4e1c\u4e03\u5f8b\u300a\u7b54\u53cb\u4eba\u300b\u4e2d\u6240\u8c13\u957f\u5c9b\uff0c\u6307\u6b64\u3002\u81ea\u5510\u4ee3\u4ee5\u6765\uff0c\u5c31\u662f\u6e38\u89c8\u80dc\u5730\u3002&quot;">橘子洲</span>头。</span>
+                            </p>
+                            <p id="means_p" class="poem-detail-main-text body-means-p">
+                                <span id="means_1_0" data="body_1_0">在深秋一个秋高气爽的日子里，</span><span id="means_1_1"
+                                                                                                data="body_1_1">眺望着湘江碧水缓缓北流。</span><span
+                                    id="means_1_2" data="body_1_2">我独自伫立在橘子洲头。</span>
+                            </p>
+                            <p class="poem-detail-main-text" id="body_p">
+                                <span id="body_2_0" data="means_2_0">看<span class="body-zhushi-span"
+                                                                            data="&quot;\u6307\u6e58\u6c5f\u897f\u5cb8\u5cb3\u9e93\u5c71\u548c\u9644\u8fd1\u8bb8\u591a\u5c71\u5cf0\u3002&quot;">万山</span>红遍，</span><span
+                                    id="body_2_1" data="means_2_1"><span class="body-zhushi-span"
+                                                                         data="&quot;\u5c71\u4e0a\u4e00\u5c42\u5c42\u7684\u6811\u6797\u7ecf\u971c\u6253\u53d8\u7ea2\uff0c\u50cf\u67d3\u8fc7\u4e00\u6837\u3002&quot;">层林尽染</span>；</span><span
+                                    id="body_2_2" data="means_2_2"><span class="body-zhushi-span"
+                                                                         data="&quot;\u6ee1\u6c5f\u3002\u6f2b\uff1a\u6ee1\uff0c\u904d\u3002&quot;">漫江</span>碧透，</span><span
+                                    id="body_2_3" data="means_2_3">百<span class="body-zhushi-span"
+                                                                          data="&quot;\u5927\u8239\u3002\u8fd9\u91cc\u6cdb\u6307\u8239\u53ea\u3002&quot;">舸</span><span
+                                    class="body-zhushi-span" data="&quot;\u4e89\u7740\u884c\u9a76\u3002&quot;">争流</span>。</span>
+                            </p>
+                            <p id="means_p" class="poem-detail-main-text body-means-p">
+                                <span id="means_2_0" data="body_2_0">看万千山峰全都变成了红色，</span><span id="means_2_1"
+                                                                                               data="body_2_1">一层层树林好像染过颜色一样，</span><span
+                                    id="means_2_2" data="body_2_2">江水清澈澄碧，</span><span id="means_2_3" data="body_2_3">一艘艘大船乘风破浪，争先恐后。</span>
+                            </p>
+                            <p class="poem-detail-main-text" id="body_p">
+                                <span id="body_3_0" data="means_3_0">鹰击长空，</span><span id="body_3_1" data="means_3_1">鱼翔浅底，</span><span
+                                    id="body_3_2" data="means_3_2"><span class="body-zhushi-span"
+                                                                         data="&quot;\u4e07\u7269\u90fd\u5728\u79cb\u5149\u4e2d\u7ade\u76f8\u81ea\u7531\u5730\u751f\u6d3b\u3002\u4e07\u7c7b\uff1a\u6307\u4e00\u5207\u751f\u7269\u3002\u971c\u5929\uff1a\u6307\u6df1\u79cb\u3002&quot;">万类霜天竞自由</span>。</span>
+                            </p>
+                            <p id="means_p" class="poem-detail-main-text body-means-p">
+                                <span id="means_3_0" data="body_3_0">广阔的天空里鹰在矫健有力地飞，</span><span id="means_3_1"
+                                                                                                 data="body_3_1">鱼在清澈的水里轻快地游着，</span><span
+                                    id="means_3_2" data="body_3_2">万物都在秋光中争着过自由自在的生活。</span></p>
+                            <p class="poem-detail-main-text" id="body_p">
+                                <span id="body_4_0" data="means_4_0"><span class="body-zhushi-span"
+                                                                           data="&quot;\u9762\u5bf9\u5e7f\u9614\u7684\u5b87\u5b99\u60c6\u6005\u611f\u6168\u3002\u6005\uff1a\u539f\u610f\u662f\u5931\u610f\uff0c\u8fd9\u91cc\u7528\u6765\u8868\u8fbe\u7531\u6df1\u601d\u800c\u5f15\u53d1\u6fc0\u6602\u6177\u6168\u7684\u5fc3\u7eea\u3002&quot;">怅寥廓</span>，</span><span
+                                    id="body_4_1" data="means_4_1">问<span class="body-zhushi-span"
+                                                                          data="&quot;\u65f7\u8fdc\u8ff7\u832b\u3002&quot;">苍茫</span>大地，</span><span
+                                    id="body_4_2" data="means_4_2">谁<span class="body-zhushi-span"
+                                                                          data="&quot;\u4e3b\u5bb0\u3002&quot;">主</span><span
+                                    class="body-zhushi-span"
+                                    data="&quot;\u540c\u201c\u5347\u6c89\u201d\uff08\u4e0a\u5347\u548c\u6ca1\u843d\uff09\u610f\u601d\u76f8\u8fd1\uff0c\u6bd4\u55bb\u4e8b\u7269\u76db\u8870\u3001\u6d88\u957f\uff0c\u8fd9\u91cc\u6307\u5174\u8870\u3002\u7531\u4e0a\u6587\u7684\u4fef\u770b\u6e38\u9c7c\uff0c\u4ef0\u770b\u98de\u9e70\uff0c\u7eb3\u95f7\u5730\u5bfb\u601d\uff08\u201c\u6005\u201d\uff09\u7a76\u7adf\u662f\u8c01\u4e3b\u5bb0\u7740\u4e16\u95f4\u4e07\u7269\u7684\u5347\u6c89\u8d77\u4f0f\u3002&quot;">沉浮</span>？</span>
+                            </p>
+                            <p id="means_p" class="poem-detail-main-text body-means-p">
+                                <span id="means_4_0" data="body_4_0">面对着无边无际的宇宙，</span><span id="means_4_1"
+                                                                                             data="body_4_1">（千万种思绪一齐涌上心头）我要问：</span><span
+                                    id="means_4_2" data="body_4_2">这苍茫大地的盛衰兴废，由谁来决定主宰呢?</span></p>
+                            <p class="poem-detail-main-text" id="body_p">
+                                <span id="body_5_0" data="means_5_0">携来<span class="body-zhushi-span"
+                                                                             data="&quot;\u5f88\u591a\u7684\u4f34\u4fa3\u3002\u4fa3\uff0c\u8fd9\u91cc\u6307\u540c\u5b66\uff08\u4e5f\u6307\u6218\u53cb)\u3002&quot;">百侣</span>曾游，</span><span
+                                    id="body_5_1" data="means_5_1">忆往昔<span class="body-zhushi-span"
+                                                                            data="&quot;\u4e0d\u5e73\u5e38\u7684\u65e5\u5b50\u662f\u5f88\u591a\u7684\u3002\u5ce5\u5d58\uff1a\u5c71\u52bf\u9ad8\u5cfb\uff0c\u8fd9\u91cc\u662f\u4e0d\u5e73\u51e1\uff0c\u4e0d\u5bfb\u5e38\u7684\u610f\u601d\u3002\u7a20\uff1a\u591a\u3002&quot;">峥嵘岁月稠</span>。</span>
+                            </p>
+                            <p id="means_p" class="poem-detail-main-text body-means-p">
+                                <span id="means_5_0" data="body_5_0">回想过去，我和我的同学，经常携手结伴来到这里游玩。</span><span
+                                    id="means_5_1" data="body_5_1">在一起商讨国家大事，那无数不平凡的岁月至今还萦绕在我的心头。</span></p>
+                            <p class="poem-detail-main-text" id="body_p">
+                                <span id="body_6_0" data="means_6_0"><span class="body-zhushi-span"
+                                                                           data="&quot;\u9002\u9022\uff0c\u6b63\u8d76\u4e0a\u3002&quot;">恰</span><span
+                                        class="body-zhushi-span"
+                                        data="&quot;\u6bdb\u6cfd\u4e1c\u4e8e1913\u5e74\u81f31918\u5e74\u5c31\u8bfb\u4e8e\u6e56\u5357\u7b2c\u4e00\u5e08\u8303\u5b66\u6821\u30021918\u5e74\u6bdb\u6cfd\u4e1c\u548c\u8427\u745c\u3001\u8521\u548c\u68ee\u7b49\u7ec4\u7ec7\u65b0\u6c11\u5b66\u4f1a\uff0c\u5f00\u59cb\u4e86\u4ed6\u65e9\u671f\u7684\u653f\u6cbb\u6d3b\u52a8\u3002&quot;">同学少年</span>，</span><span
+                                    id="body_6_1" data="means_6_1"><span class="body-zhushi-span"
+                                                                         data="&quot;\u98ce\u91c7\u624d\u534e\u6b63\u76db\u3002&quot;">风华正茂</span>；</span><span
+                                    id="body_6_2" data="means_6_2"><span class="body-zhushi-span"
+                                                                         data="&quot;\u8bfb\u4e66\u4eba\uff0c\u8fd9\u91cc\u6307\u9752\u5e74\u5b66\u751f\u3002&quot;">书生</span><span
+                                    class="body-zhushi-span"
+                                    data="&quot;\u610f\u5fd7\u548c\u6c14\u6982\u3002&quot;">意气</span>，</span><span
+                                    id="body_6_3" data="means_6_3"><span class="body-zhushi-span"
+                                                                         data="&quot;\u6325\u65a5\uff0c\u5954\u653e\u3002\u300a\u5e84\u5b50\u2022\u7530\u5b50\u65b9\u300b\uff1a\u201c\u6325\u65a5\u516b\u6781\u201d\u3002\u90ed\u8c61\u6ce8\uff1a\u201c\u6325\u65a5\uff0c\u72b9\u7eb5\u653e\u4e5f\u3002\u201d\u9052\uff0c\u5f3a\u52b2\u6709\u529b\u3002\u65b9\uff1a\u6b63\u3002\u6325\u65a5\u65b9\u9052\uff0c\u662f\u8bf4\u70ed\u60c5\u5954\u653e\uff0c\u52b2\u5934\u6b63\u8db3\u3002&quot;">挥斥方遒</span>。</span>
+                            </p>
+                            <p id="means_p" class="poem-detail-main-text body-means-p">
+                                <span id="means_6_0" data="body_6_0">同学们正值青春年少，</span><span id="means_6_1"
+                                                                                            data="body_6_1">风华正茂；</span><span
+                                    id="means_6_2" data="body_6_2">大家踌躇满志，意气奔放，</span><span id="means_6_3"
+                                                                                            data="body_6_3">正强劲有力。</span>
+                            </p>
+                            <p class="poem-detail-main-text" id="body_p">
+                                <span id="body_7_0" data="means_7_0">指点江山，</span><span id="body_7_1" data="means_7_1">激扬文字，</span><span
+                                    id="body_7_2" data="means_7_2"><span class="body-zhushi-span"
+                                                                         data="&quot;\u628a\u5f53\u65f6\u7684\u519b\u9600\u5b98\u50da\u770b\u5f97\u540c\u7caa\u571f\u4e00\u6837\u3002\u7caa\u571f\uff0c\u4f5c\u52a8\u8bcd\u7528\uff0c\u89c6\u2026\u2026\u5982\u7caa\u571f\u3002\u4e07\u6237\u4faf\uff0c\u6c49\u4ee3\u8bbe\u7f6e\u7684\u6700\u9ad8\u4e00\u7ea7\u4faf\u7235\uff0c\u4eab\u6709\u4e07\u6237\u519c\u6c11\u7684\u8d4b\u7a0e\u3002\u6b64\u501f\u6307\u5927\u519b\u9600\uff0c\u5927\u5b98\u50da\u3002\u4e07\u6237\uff0c\u6307\u4faf\u7235\u5c01\u5730\u5185\u7684\u6237\u53e3\uff0c\u8981\u5411\u53d7\u5c01\u8005\u7f34\u7eb3\u79df\u7a0e\uff0c\u670d\u52b3\u5f79\u3002&quot;">粪土当年万户侯</span>。</span>
+                            </p>
+                            <p id="means_p" class="poem-detail-main-text body-means-p">
+                                <span id="means_7_0" data="body_7_0">评论国家大事，</span><span id="means_7_1" data="body_7_1">写出这些激浊扬清的文章，</span><span
+                                    id="means_7_2" data="body_7_2">把当时那些军阀官僚看得如同粪土。</span></p>
+                            <p class="poem-detail-main-text" id="body_p">
+                                <span id="body_8_0" data="means_8_0">曾记否，</span><span id="body_8_1"
+                                                                                      data="means_8_1">到<span
+                                    class="body-zhushi-span"
+                                    data="&quot;\u6c5f\u5fc3\u6c34\u6df1\u6d41\u6025\u7684\u5730\u65b9\u3002&quot;">中流</span><span
+                                    class="body-zhushi-span"
+                                    data="&quot;\u4f5c\u8005\u81ea\u6ce8\uff1a\u201c\u51fb\u6c34\uff1a\u6e38\u6cf3\u3002\u90a3\u65f6\u521d\u5b66\uff0c\u76db\u590f\u6c34\u6da8\uff0c\u51e0\u6b7b\u8005\u6570\uff0c\u4e00\u7fa4\u4eba\u7ec8\u4e8e\u575a\u6301\uff0c\u76f4\u5230\u9686\u51ac\uff0c\u72b9\u5728\u6c5f\u4e2d\u3002\u5f53\u65f6\u6709\u4e00\u7bc7\u8bd7\uff0c\u90fd\u5fd8\u8bb0\u4e86\uff0c\u53ea\u8bb0\u5f97\u4e24\u53e5\uff1a\u81ea\u4fe1\u4eba\u751f\u4e8c\u767e\u5e74\uff0c\u4f1a\u5f53\u6c34\u51fb\u4e09\u5343\u91cc\u3002\u201d\u8fd9\u91cc\u5f15\u7528\u7956\u9016\uff08t\u00ec\uff09\u7684\u201c\u4e2d\u6d41\u51fb\u696b\u201d\u5178\u6545\u3002\uff08\u7956\u9016\u56e0\u4e3a\u56fd\u5bb6\u653f\u6743\u503e\u8986\uff0c\u65f6\u523b\u6000\u7740\u632f\u5174\u5149\u590d\u7684\u5fc3\u5fd7\u3002\u5143\u5e1d\u5c31\u8ba9\u4ed6\u62c5\u4efb\u594b\u5a01\u5c06\u519b\u3001\u8c6b\u5dde\u523a\u53f2\uff0c\u4f9b\u7ed9\u4ed6\u4e00\u5343\u4eba\u7684\u519b\u7cae\uff0c\u4e09\u5343\u5339\u5e03\uff0c\u4f46\u4e0d\u7ed9\u6218\u8863\u548c\u5175\u5668\uff0c\u8ba9\u4ed6\u81ea\u884c\u62db\u52df\u58eb\u4f17\u3002\u7956\u9016\u4ecd\u5c31\u7387\u9886\u968f\u81ea\u5df1\u6d41\u4ea1\u7684\u90e8\u5c5e\u4e00\u767e\u591a\u5bb6\uff0c\u6e21\u8fc7\u957f\u6c5f\uff0c\u5230\u6c5f\u5fc3\u65f6\u4ed6\u6263\u51fb\u8239\u6868\u53d1\u8a93\u8bf4\uff1a\u201c\u6211\u7956\u9016\u4e0d\u80fd\u5e73\u5b9a\u4e2d\u539f\u5e76\u518d\u6b21\u6e21\u6c5f\u56de\u6765\u7684\u8bdd\uff0c\u5c31\u50cf\u957f\u6c5f\u7684\u6c34\u4e00\u53bb\u4e0d\u8fd4\uff01\u201d\u8a00\u8f9e\u6fc0\u6602\u795e\u8272\u60b2\u58ee\uff0c\u4f17\u4eba\u90fd\u4e3a\u4ed6\u7684\u8a93\u8a00\u611f\u6168\u8d5e\u53f9\u3002\uff09\u8fd9\u91cc\u6307\u6e38\u6cf3\u3002&quot;">击水</span>，</span><span
+                                    id="body_8_2" data="means_8_2">浪<span class="body-zhushi-span"
+                                                                          data="&quot;\u963b\u6b62\u3002&quot;">遏</span>飞舟？</span>
+                            </p>
+                            <p id="means_p" class="poem-detail-main-text body-means-p">
+                                <span id="means_8_0" data="body_8_0">可曾记得，</span><span id="means_8_1" data="body_8_1">那时我们在江水深急的地方游泳，</span><span
+                                    id="means_8_2" data="body_8_2">那激起的浪花几乎挡住了疾驰而来的船?</span></p>
+                        </div>
+                        <div class="poem-tags-container">
+                            <div class="poem-tag-type">标签:</div>
+                            <div class="poem-tags-content">
+                                <a href="/s?ptype=poem_tag&amp;about=情感" class="poem-detail-tag">情感</a><a
+                                    href="/s?ptype=poem_tag&amp;about=写景" class="poem-detail-tag">写景</a><a
+                                    href="/s?ptype=poem_tag&amp;about=抒怀" class="poem-detail-tag">抒怀</a><a
+                                    href="/s?ptype=poem_tag&amp;about=高中古诗" class="poem-detail-tag">高中古诗</a><a
+                                    href="/s?ptype=poem_tag&amp;about=景色" class="poem-detail-tag">景色</a><a
+                                    href="/s?ptype=poem_tag&amp;about=壮志" class="poem-detail-tag">壮志</a></div>
+                        </div>
+                    </div>
+
+                    <div id="means_zhushi_div" style="">
+                        <!-- 译文 -->
+                        <div class="poem-detail-item" id="poem-detail-translation">
+                            <div>
+                                <a href="javascript:"
+                                   class="poem-detail-item-title item-multi-title item-multi-title-active"><b>译文</b></a>
+                                <span class="space"></span>
+                                <a href="javascript:" class="poem-detail-item-title item-multi-title"><b>注释</b></a>
+                            </div>
+                            <div class="poem-detail-separator"></div>
+                            <div class="poem-detail-item-content means-fold">
+                                在深秋一个秋高气爽的日子里，眺望着湘江碧水缓缓北流。我独自伫立在橘子洲头。看万千山峰全都变成了红色，一层层树林好像染过颜色一样，江水清澈澄碧，一艘艘大船乘风破浪，争先恐后。广阔的天空里鹰在矫健有力地飞，鱼在清澈的水里轻快地游着，万物都在秋光中争着过自由自在的生活。面对着无边无际的宇宙，（千万种思绪一齐涌上心头）我要问：这苍茫大地的盛衰兴废，由谁来决定主宰呢?回想过去，我和我的同学，经常携手结伴来到这里游玩。在一起商讨国家大事，那无数不平凡的岁月至今还萦绕在我的心头。同学们正值青春年少，风华正茂；大家踌躇满志，意气奔放，正强劲有力。评论国家大事，写出这些激浊扬清的文章，把当时那些军阀官僚看得如同粪土。可曾记得，那时我们在江水深急的地方游泳，那激起的浪花几乎挡住了疾驰而来的船?
+                            </div>
+                            <div class="poem-detail-more fold" style="display: none;">
+                                <a href="javascript:" class="f"><b>︾</b>查看更多</a>
+                                <a href="javascript:" class="e"><b>︽</b>收起更多</a>
+                            </div>
+                        </div>
+
+                        <!-- 注释 -->
+                        <div class="poem-detail-item" id="poem-detail-zhushi" style="display: none;">
+                            <div>
+                                <a href="javascript:" class="poem-detail-item-title item-multi-title"><b>译文</b></a>
+                                <span class="space"></span>
+                                <a href="javascript:"
+                                   class="poem-detail-item-title item-multi-title item-multi-title-active"><b>注释</b></a>
+                            </div>
+                            <div class="poem-detail-separator"></div>
+                            <div class="poem-detail-item-content">
+                                <p>(1)沁园春：词牌名，“沁园”为东汉明帝为女儿沁水公主修建的皇家园林，据《后汉书
+                                    窦宪传》记载，沁水公主的舅舅窦宪倚仗其妹贵为皇后之势，竟强夺公主园林，后人感叹其事，多在诗中咏之，渐成“沁园春”这一词牌。</p>
+                                <p>
+                                    (2)湘（xiāng）江：一名湘水，湖南省最大的河流，源出广西壮族自治区陵川县南的海洋山，长1752里，向东北流贯湖南省东部，经过长沙，北入洞庭湖。　所以说是湘江北去。</p>
+                                <p> (3)寒秋：就是深秋、晚秋。秋深已有寒意，所以说是寒秋。</p>
+                                <p>
+                                    (4)橘子洲：地名，又名水陆洲，是长沙城西湘江中一个狭长小岛，西面靠近岳麓山。南北长约11里，东西最宽处约一里。毛泽东七律《答友人》中所谓长岛，指此。自唐代以来，就是游览胜地。</p>
+                                <p> (5)以上三句是说：在寒秋季节，独立在橘子洲头目送着湘江水汩汩北流。</p>
+                                <p> (6)万山：指湘江西岸岳麓山和附近许多山峰。</p>
+                                <p> (7)层林尽染：山上一层层的树林经霜打变红，像染过一样。</p>
+                                <p> (8)漫江：满江。漫：满，遍。</p>
+                                <p> (9)舸（gě）：大船。这里泛指船只。</p>
+                                <p> (10)争流：争着行驶。</p>
+                                <p> (11)鹰击长空，鱼翔浅底：鹰在广阔的天空里飞，鱼在清澈的水里游。击，搏 击。这里形容飞得矫健有力。翔，本指鸟盘旋飞翔，这里形容鱼游得轻快自由。</p>
+                                <p> (12)万类霜天竞自由：万物都在秋光中竞相自由地生活。万类：指一切生物。霜天：指深秋。</p>
+                                <p> (13)怅寥廓(chàng liáo kuò）：面对广阔的宇宙惆怅感慨。怅：原意是失意，这里用来表达由深思而引发激昂慷慨的心绪。</p>
+                                <p> (14)寥廓（liáo kuò）：广远空阔，这里用来描写宇宙之大。</p>
+                                <p> (15)苍茫：旷远迷茫。</p>
+                                <p> (16)主：主宰。</p>
+                                <p>
+                                    (17)沉浮：同“升沉”（上升和没落）意思相近，比喻事物盛衰、消长，这里指兴衰。由上文的俯看游鱼，仰看飞鹰，纳闷地寻思（“怅”）究竟是谁主宰着世间万物的升沉起伏。</p>
+                                <p> (18)这句问话在这里可以理解为：在这军阀统治下的中国，到底应该由谁来主宰国家兴衰和人民祸福的命运呢？</p>
+                                <p> (19)百侣：很多的伴侣。侣，这里指同学（也指战友)。</p>
+                                <p> (20)峥嵘(zhēng róng）岁月稠：不平常的日子是很多的。峥嵘：山势高峻，这里是不平凡，不寻常的意思。稠：多。</p>
+                                <p> (21)恰：适逢，正赶上。</p>
+                                <p> (22)同学少年：毛泽东于1913年至1918年就读于湖南第一师范学校。1918年毛泽东和萧瑜、蔡和森等组织新民学会，开始了他早期的政治活动。</p>
+                                <p> (23)风华正茂：风采才华正盛。</p>
+                                <p> (24)书生：读书人，这里指青年学生。</p>
+                                <p> (25)意气：意志和气概。</p>
+                                <p> (26)挥斥方遒（qiú）：挥斥，奔放。《庄子•田子方》：“挥斥八极”。郭象注：“挥斥，犹纵放也。”遒，强劲有力。方：正。挥斥方遒，是说热情奔放，劲头正足。</p>
+                                <p>
+                                    (27)指点江山，激扬文字：评论国家大事，用文字来抨击丑恶的现象，赞扬美好的事物。写出激浊扬清的文章。指点，评论。江山，指国家。激扬，激浊扬清，抨击恶浊的，褒扬善良的。</p>
+                                <p>
+                                    (28)粪土当年万户侯：把当时的军阀官僚看得同粪土一样。粪土，作动词用，视……如粪土。万户侯，汉代设置的最高一级侯爵，享有万户农民的赋税。此借指大军阀，大官僚。万户，指侯爵封地内的户口，要向受封者缴纳租税，服劳役。</p>
+                                <p> (29)中流：江心水深流急的地方。</p>
+                                <p>
+                                    (30)击水：作者自注：“击水：游泳。那时初学，盛夏水涨，几死者数，一群人终于坚持，直到隆冬，犹在江中。当时有一篇诗，都忘记了，只记得两句：自信人生二百年，会当水击三千里。”这里引用祖逖（tì）的“中流击楫”典故。（祖逖因为国家政权倾覆，时刻怀着振兴光复的心志。元帝就让他担任奋威将军、豫州刺史，供给他一千人的军粮，三千匹布，但不给战衣和兵器，让他自行招募士众。祖逖仍就率领随自己流亡的部属一百多家，渡过长江，到江心时他扣击船桨发誓说：“我祖逖不能平定中原并再次渡江回来的话，就像长江的水一去不返！”言辞激昂神色悲壮，众人都为他的誓言感慨赞叹。）这里指游泳。</p>
+                                <p> (31)遏（è）：阻止。</p>
+                                <a href="http://so.gushiwen.org/view_71206.aspx" target="_blank"
+                                   data-click="{&quot;act&quot;:&quot;a_click_zhushi_more&quot;}"
+                                   style="display: none;">
+                                    来源：古诗文网&gt;&gt;
+                                </a>
+
+                                <span style="color: #999;">&nbsp;&nbsp;来源：古诗文网</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 赏析 -->
+                    <div class="poem-detail-item" id="poem-detail-shangxi">
+                        <div>
+                            <a href="javascript:"
+                               class="poem-detail-item-title item-multi-title item-multi-title-active"><b>赏析</b></a>
+                            <span class="space"></span>
+                            <a href="javascript:" class="poem-detail-item-title item-multi-title"><b>相关内容</b></a>
+                        </div>
+                        <div class="poem-detail-separator"></div>
+                        <div class="poem-detail-item-content">
+                            历史角在中国的史上，第一个大量描绘自然美，并把对自然美的描绘和对国家和人民的命运的关切结合起来的诗人是屈原。这是中国古典诗歌的一个优良传统。毛泽东的诗词继承了这个优良传统。他善于把自然美与社会美融为一体，通过栩栩如生、呼之欲出的自然美的艺术形象，表现出社会美的内容。这首词通过对长沙秋景的描绘和对青年时代革命斗争生活的回忆，提出了“谁主沉浮”的问题，抒发了对中华民族前途的乐观主义精神和以天下事为己任的豪情壮志。
+                            特别是本词的最后三句，以设问结尾，巧妙回答了“谁主沉浮”的问题。正像当年中流击水那样，勇敢地投身到革命的风浪中，激流勇进...
+                            <a href="http://so.gushiwen.org/shangxi_2731.aspx"
+                               data-click="{&quot;act&quot;:&quot;a_click_shangxi_more&quot;}">
+                                古诗文网&gt;&gt;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 相关内容 -->
+                    <div class="poem-detail-item" id="poem-detail-shangxi-ext" style="display: none;">
+                        <div>
+                            <a href="javascript:" class="poem-detail-item-title item-multi-title"><b>赏析</b></a>
+                            <span class="space"></span>
+                            <a href="javascript:"
+                               class="poem-detail-item-title item-multi-title item-multi-title-active"><b>相关内容</b></a>
+                        </div>
+                        <div class="poem-detail-separator"></div>
+                        <div class="poem-detail-item-content">
+                            <h2>创作背景</h2>
+                            <p>作者：佚名</p>
+                            <p>　　《沁园春·长沙》是毛泽东1925年秋所作。长沙是毛泽东人格形成的地方，长沙也是中国农村革命的发源地，是毛泽东初期革命活动的中心。1911年，...
+                                <a href="http://so.gushiwen.org/view_71206.aspx"
+                                   data-click="{&quot;act&quot;:&quot;a_click_shangxi_ext_more&quot;}">
+                                    古诗文网&gt;&gt;
+                                </a>
+                            </p></div>
+                    </div>
+
+                    <!-- 作者介绍 -->
+                    <div class="poem-detail-item" id="poem-detail-author">
+                        <div class="poem-detail-item-title"><b>作者介绍</b></div>
+                        <div class="poem-detail-separator"></div>
+                        <div class="poem-detail-item-content">
+                            <div class="poem-author-container">
+                                <img class="poem-author-img"
+                                     src="https://dss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=4246698863,2744704374&amp;fm=58">
+                                <div class="poem-author-intro" data-ellipsis="true" data-ellipsis-max-line="5">
+                                    <span data-ellipsis-container="true">毛泽东（1893年12月26日－1976年9月9日），字润之（原作咏芝，后改润芝），笔名子任。湖南湘潭人。诗人，伟大的马克思主义者，无产阶级革命家、战略家和理论家，中国共产党、中国人民解放军和中华人民共和国的主要缔造者和领导人。1949至1976年，毛泽东担任中华人民共和国最高领导人。他对马克思列宁主义的发展、军事理论的贡献以及对共产党的理论贡献被称为毛泽东思想。因毛泽东担任过的主要职务几乎全部称为主席，所以也被人们尊称为“毛…</span>
+                                    <a href="https://baike.baidu.com/item/毛泽东/113835?fr=kg_hanyu">百科详情&gt;&gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="right-panel" class="right module">
+                    <div class="recmd-panel module" id="recmd-panel">
+
+
+                        <div class="recmd-wrapper">
+                            <h1>热门推荐</h1>
+                            <ul class="recmd-list">
+                                <li class="recmd-item">
+                                    <a href="/shici/detail?pid=728cc93938e04276909386ee5ae85d6b">
+                                        <span class="recmd-item-content">望庐山瀑布</span>
+                                        <span class="recmd-item-desc-right">李白（唐）</span>
+                                    </a>
+                                    <div class="recmd-item-separator"></div>
+                                </li>
+                                <li class="recmd-item">
+                                    <a href="/shici/detail?pid=840c1c115fab4b9ca3dcdc418852e74b">
+                                        <span class="recmd-item-content">渭城曲 / 送元二使安西</span>
+                                        <span class="recmd-item-desc-right">王维（唐）</span>
+                                    </a>
+                                    <div class="recmd-item-separator"></div>
+                                </li>
+                                <li class="recmd-item">
+                                    <a href="/shici/detail?pid=946d8372884d445eb0a4cc6e3826dbe8">
+                                        <span class="recmd-item-content">水调歌头·明月几时有</span>
+                                        <span class="recmd-item-desc-right">苏轼（宋）</span>
+                                    </a>
+                                    <div class="recmd-item-separator"></div>
+                                </li>
+                                <li class="recmd-item">
+                                    <a href="/shici/detail?pid=5069e2eea3d84fd3a7f13871c578638f">
+                                        <span class="recmd-item-content">天净沙·秋思</span>
+                                        <span class="recmd-item-desc-right">马致远（元）</span>
+                                    </a>
+                                    <div class="recmd-item-separator"></div>
+                                </li>
+                                <li class="recmd-item">
+                                    <a href="/shici/detail?pid=d525d09c4ed996f079dde6490c33a4a6">
+                                        <span class="recmd-item-content">七子之歌</span>
+                                        <span class="recmd-item-desc-right">闻一多（现代）</span>
+                                    </a>
+                                    <div class="recmd-item-separator"></div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p id="copyright">© Baidu
+        <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+        <a href="http://www.baidu.com">百度首页</a>
+        <a href="/s" style="display:none">站内搜索</a>
+        <a href="http://help.baidu.com/newadd?prod_id=8&amp;category=1">问题反馈</a>
+        <a href="/contact">商务合作</a>
+        <a href="http://weibo.com/5789783834/manage">关注微博</a>
+        <!-- <a href="http://qm.qq.com/cgi-bin/qm/qr?k=WUsL3Jbek0Km8R4r-m1dK4JZjGw_A8Ba" target="_blank">用户QQ群：484758177</a> -->
+    </p>
+
+    <div id="fmp_flash_div" style="display:none">
+        <audio id="audio"></audio>
+    </div>
+
+    <script src="/static/asset/dep/jquery/jquery-3.1.0.min.js"></script>
+    <script src="/static/asset/dep/esl/esl.min.js"></script>
+
+    <script>
+                require.config(
+                {
+                    baseUrl: '/static/asset/asset',
+                    urlArgs: 'v=201703281500',
+                    packages: [
+                        {
+                            'name': 'etpl',
+                            'location': '/static/asset/dep/etpl',
+                            'main': 'main'
+                        }
+                    ]
+                }
+            );
+        require(['sug_pc'], function(sug_pc){
+        sug_pc.init();
+    });
+
+    </script>
+
+
+    <script type="text/javascript">
+        var pageData = {
+        };
+        require(['poem_detail_pc'], function(main) {
+            main.init();
+        });
+
+    </script>
+
+
+    <div class="tips hide"></div>
+</body>
+</html>
