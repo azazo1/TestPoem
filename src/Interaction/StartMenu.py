@@ -5,7 +5,6 @@ import src
 from src.NetGetPoem.GetPoem import getPoemMessageByName, getPoemMessageByUrl
 from src.Interaction.ReciteAll import RA
 from src.Interaction.RecitePart import RP
-from src.Interaction.ReciteBase import RB
 
 
 def changeParser():
@@ -106,6 +105,8 @@ class Corrector:
         self.chosen = tk.StringVar()
         self.poemUrls = {}  # 提供对应诗歌的url
         self.parent = father
+        self.scale = tk.Scale()  # 临时
+        self.moveFrame = tk.Frame()  # 临时
 
     def correctEntry(self, poemName: str):
         """修改Entry内容"""
@@ -118,27 +119,33 @@ class Corrector:
             frame: tk.Frame
             frame.pack_forget()
             self.tempFrames.remove(frame)
+        self.parent.window.bind('<Button-4>', lambda ignore: None)  # 取消绑定移动建议栏
+        self.parent.window.bind('<Button-5>', lambda ignore: None)
+
+    def updateMovement(self, delta=0):
+        position = int(self.scale.get())
+        if isinstance(delta, int):
+            position -= 5 * delta / abs(delta)  # 鼠标滚轮时 （delta为正则5，delta为负则-5）
+        moveFrame = self.moveFrame
+        self.scale.set(position)
+        moveFrame.place_configure(
+            y=-position / 100 * (moveFrame.winfo_height() - moveFrame.master.winfo_height()),
+        )
 
     def showCorrector(self, poemNamesUrls: list):
         """提供一个修正诗名的建议栏"""
-
-        def move(position):
-            moveFrame.place_configure(
-                y=-int(position) / 100 * (moveFrame.winfo_height() - moveFrame.master.winfo_height()),
-                x=0
-            )
-
+        self.parent.window.bind('<MouseWheel>', lambda e: self.updateMovement(e.delta))  # 滚动建议栏
         self.chosen.set('|||')
         packFrame = tk.LabelFrame(self.frame, text='选择一个正确的诗名', height=self.parent.window.winfo_height() // 3)
         chooseFrame = tk.Frame(packFrame, bd=5, relief=tk.SUNKEN)
         padFrame = tk.Frame(chooseFrame)
-        moveFrame = tk.Frame(padFrame)
+        self.moveFrame = moveFrame = tk.Frame(padFrame)
         self.tempFrames.append(packFrame)
         for name, url in poemNamesUrls:
             rb = tk.Radiobutton(moveFrame, text=name, variable=self.chosen, value=f'{name}|||{url}',
                                 command=self.choose)
             rb.pack()
-        scale = tk.Scale(packFrame, from_=0, to=100, showvalue=False, command=move)
+        self.scale = scale = tk.Scale(packFrame, from_=0, to=100, showvalue=False, command=self.updateMovement)
         moveFrame.place(x=0, y=0)
         padFrame.pack(expand=True, fill=tk.BOTH)
         chooseFrame.pack(fill=tk.BOTH, expand=True, side=tk.LEFT, ipadx=chooseFrame['bd'], ipady=chooseFrame['bd'])
