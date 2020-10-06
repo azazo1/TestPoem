@@ -20,3 +20,5 @@ class RA(RB):
             e = tk.Entry(self.moveFrame)
             e.insert(0, str(i))
             e.pack(expand=True, fill=tk.X)
+if __name__ == '__main__':
+    RA(['','','','']).mainloop()

@@ -154,7 +154,7 @@ class Corrector:
 
     def choose(self):
         name, url = self.chosen.get().split('|||')
-        self.poemUrls.setdefault(name, url)
+        self.poemUrls[name] = url
         self.correctEntry(name)
         self.forgetCorrector()
 

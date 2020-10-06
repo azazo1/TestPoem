@@ -37,7 +37,7 @@ class RB:
         self.widgetsFrame.pack(expand=True, fill=tk.BOTH)
         self.contentFrame.pack(expand=True, fill=tk.BOTH, ipadx=self.contentFrame['bd'], ipady=self.contentFrame['bd'],
                                side=tk.LEFT)
-        self.padFrame.pack()
+        self.padFrame.pack(expand=True, fill=tk.BOTH)
         self.controlFrame.pack(expand=True, fill=tk.Y)
         self.moveFrame.place(x=0, y=0, relwidth=1.0)
 
@@ -79,3 +79,5 @@ class RB:
 
     def close(self):
         self.window.destroy()
+if __name__ == '__main__':
+    RB(['','','','']).mainloop()
